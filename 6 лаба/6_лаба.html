@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LinguaMaster - Мобильное приложение для изучения языков</title>
+  <link rel="stylesheet" href="6_лаба.css" />
+</head>
+<body>
+  <header>
+    <h1>LinguaMaster</h1>
+    <p>Учите языки легко и с удовольствием - прямо с телефона</p>
+  </header>
+  <nav aria-label="Главное меню">
+    <div class="nav-container">
+      <div class="nav-logo">LinguaMaster</div>
+      <button class="nav-toggle" aria-label="Открыть меню">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#product">Продукт</a></li>
+        <li><a href="#testimonials">Отзывы</a></li>
+        <li><a href="#subscribe">Подписка</a></li>
+        <li><a href="#counters">Достижения</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <section id="product" class="product-description" aria-labelledby="product-title">
+      <div class="product-text">
+        <h2 id="product-title">Мобильное приложение LinguaMaster - ваш персональный репетитор</h2>
+        <p>LinguaMaster - это инновационное приложение для изучения иностранных языков, которое адаптируется под ваш уровень и цели. С ним вы сможете учить слова, грамматику и разговорные навыки в удобном формате, где бы вы ни были.</p>
+        <ul class="benefits-list" aria-label="Преимущества приложения LinguaMaster">
+          <li>Персонализированные уроки под ваш уровень и интересы</li>
+          <li>Интерактивные упражнения с мгновенной обратной связью</li>
+          <li>Оффлайн-доступ для занятий без интернета</li>
+          <li>Игровая система мотивации и достижения целей</li>
+          <li>Поддержка более 15 языков, включая английский, испанский и китайский</li>
+        </ul>
+        <div class="cta">
+          <button class="btn-primary" id="btnLearnMore" aria-label="Узнать больше о LinguaMaster">Узнать больше</button>
+        </div>
+      </div>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Скриншоты приложения LinguaMaster на смартфоне" loading="lazy" />
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials" aria-labelledby="testimonials-title">
+      <h2 id="testimonials-title">Отзывы наших пользователей</h2>
+      <div class="testimonial-list">
+        <article class="testimonial" aria-label="Отзыв пользователя Анны">
+            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=60&q=80" alt="Фото Анны" loading="lazy" />
+          <div>
+            <p class="testimonial-text">«С LinguaMaster я наконец-то начала говорить по-испански! Уроки интересные, а приложение очень удобное.»</p>
+            <p class="testimonial-name">Анна, Москва</p>
+          </div>
+        </article>
+        <article class="testimonial" aria-label="Отзыв пользователя Ивана">
+            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=60&q=80" alt="Фото Ивана" loading="lazy" />
+          <div>
+            <p class="testimonial-text">«Отличное приложение для занятых людей. Учусь в метро и на прогулках, прогресс заметен быстро.»</p>
+            <p class="testimonial-name">Иван, Санкт-Петербург</p>
+          </div>
+        </article>
+        <article class="testimonial" aria-label="Отзыв пользователя Марии">
+            <img src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?auto=format&fit=crop&w=60&q=80" alt="Фото Марии" loading="lazy" />
+          <div>
+            <p class="testimonial-text">«Люблю игровые задания и систему достижений - учиться стало весело и мотивирующе!»</p>
+            <p class="testimonial-name">Мария, Новосибирск</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="subscribe" class="subscribe-section" aria-labelledby="subscribe-title">
+      <h2 id="subscribe-title">Подпишитесь на рассылку и получите скидку 10%!</h2>
+      <p>Будьте в курсе новинок, акций и полезных советов по изучению языков.</p>
+      <form class="subscribe-form" aria-label="Форма подписки на рассылку" onsubmit="return false;">
+        <input type="email" id="email" name="email" placeholder="Введите ваш email" required aria-required="true" aria-describedby="emailHelp" />
+        <button type="submit" id="subscribeBtn">Подписаться</button>
+      </form>
+    </section>
+
+    <section id="counters" class="counters" aria-label="Достижения компании LinguaMaster">
+      <div class="counter" aria-live="polite" aria-atomic="true">
+        <div class="counter-number" data-target="120000">0</div>
+        <div class="counter-label">Пользователей</div>
+      </div>
+      <div class="counter" aria-live="polite" aria-atomic="true">
+        <div class="counter-number" data-target="5">0</div>
+        <div class="counter-label">Лет на рынке</div>
+      </div>
+      <div class="counter" aria-live="polite" aria-atomic="true">
+        <div class="counter-number" data-target="450000">0</div>
+        <div class="counter-label">Уроков пройдено</div>
+      </div>
+      <div class="counter" aria-live="polite" aria-atomic="true">
+        <div class="counter-number" data-target="15">0</div>
+        <div class="counter-label">Поддерживаемых языков</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 LinguaMaster. Все права защищены.
+  </footer>
+
+  <script src="6_лаба.js"></script>
+</body>
+</html>
