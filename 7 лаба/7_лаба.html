@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Музей мемов</title>
+  <link rel="stylesheet" href="7_лаба.css" />
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <header>
+    <h1 id="site-title">Музей мемов</h1>
+    <nav>
+      <ul id="category-nav">
+        <li data-category="all" class="active">Все</li>
+        <li data-category="classic">Классика</li>
+        <li data-category="internet">Интернет</li>
+        <li data-category="animal">Животные</li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Поиск мемов..." />
+    </div>
+  </header>
+  <main>
+    <section id="memes-gallery" class="gallery"></section>
+  </main>
+  <!-- Модалка -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="modal-close" class="close">&times;</span>
+      <img id="modal-img" src="" alt="Мем" />
+      <div class="modal-info">
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <p><strong>Год:</strong> <span id="modal-year"></span></p>
+        <p><strong>Источник:</strong> <a id="modal-source" href="#" target="_blank" rel="noopener noreferrer">Перейти</a></p>
+        <div class="rating">
+          <button id="like-btn" title="Лайк">👍 <span id="like-count">0</span></button>
+          <button id="dislike-btn" title="Дизлайк">👎 <span id="dislike-count">0</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Пасхалка -->
+  <div id="easter-egg-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="easter-egg-close" class="close">&times;</span>
+      <img src="пасхался.jpg" alt="Пасхалка" style="max-width:200px;margin-bottom:1rem;">
+      <h2>Вы нашли пасхалку!</h2>
+      <p>Мем-сюрприз: <b>Surprised Pikachu</b></p>
+      <img src="пикачу.webp" alt="Surprised Pikachu" style="max-width:200px;">
+    </div>
+  </div>
+  <script src="7_лаба.js"></script>
+</body>
+</html>
